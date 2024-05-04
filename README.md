@@ -1,7 +1,9 @@
 # Bootstrap Analysis - Bag of Little Bootstrap
 
 ## Overview
-This project applies Bootstrap regression techniques to evaluate the stability and reliability of predictive models. We employ both standard Bootstrap methods and the Bag of Little Bootstraps (BLB) for computational efficiency in large datasets.
+This project applies Bootstrap regression techniques to evaluate the stability and reliability of predictive models. We employ both standard Bootstrap methods and the Bag of Little Bootstraps (BLB) for computational efficiency in large datasets and perform a comparative analysis to assess each method's predictive performance.
+
+<img src="https://github.com/rohitkulkarni08/enhancing-predictive-modeling-using-bootstrapping/blob/584e4a44a82d9deaa7666d05d503acbf2af77b22/images/Methology.png" width="650" height="600">
 
 ## Why Use Bootstrap?
 Bootstrap methods are used to understand the variability of sample estimates by resampling with replacement from an estimate and assessing the variance of the estimator. The BLB approach further enhances this by providing a scalable way to obtain quality uncertainty measures with parallel computation.
@@ -75,6 +77,9 @@ The results are summarized in the following table, which details the confidence 
 | Random Forest       | BLB                  | 1.91       | 0.958    | -0.00002 | 0.520   |
 | Random Forest       | Standard Bootstrap   | 0.173      | 0.227    | -0.00039 | 0.088   |
 
+
+<img src="https://github.com/rohitkulkarni08/enhancing-predictive-modeling-using-bootstrapping/blob/584e4a44a82d9deaa7666d05d503acbf2af77b22/images/Regression-output.png" width="600" height="400">
+
 ### Inferences
 
 - **BLB Method**: Generally offers wider confidence intervals and better coverage, indicating more reliable uncertainty measures.
@@ -113,6 +118,9 @@ Results detail the confidence interval width, coverage probability, accuracy, re
 | Random Forest Classification   | Standard Bootstrap   | 0.182    | 0.084    | 0.973    | 0.743  | 0.827    | 0.977   |
 | Gradient Boosting Classification | BLB                | 0.966    | 0.956    | 1.000    | 1.000  | 1.000    | 1.000   |
 | Gradient Boosting Classification | Standard Bootstrap | 0.108    | 0.078    | 0.737    | 0.895  | 0.367    | 0.892   |
+
+
+<img src="https://github.com/rohitkulkarni08/enhancing-predictive-modeling-using-bootstrapping/blob/584e4a44a82d9deaa7666d05d503acbf2af77b22/images/Classification-output.png" width="600" height="400">
 
 ### Inferences
 
